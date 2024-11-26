@@ -1,0 +1,22 @@
+{
+  "name": "testimonial-page-master",
+  "version": "1.0.0",
+  "description": "Challenge by devChallenges.io",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./src/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pogo182028/Testimonial-Page.git"
+  },
+  "author": "Dunston Madariaga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pogo182028/Testimonial-Page/issues"
+  },
+  "homepage": "https://github.com/Pogo182028/Testimonial-Page#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.15"
+  }
+}
