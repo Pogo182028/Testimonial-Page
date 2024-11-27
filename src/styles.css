@@ -554,18 +554,6 @@ video {
   display: none;
 }
 
-.col-\[4\/6\] {
-  grid-column: 4/6;
-}
-
-.col-\[4\/7\] {
-  grid-column: 4/7;
-}
-
-.row-\[2\] {
-  grid-row: 2;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -603,10 +591,6 @@ video {
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
-
 .h-8 {
   height: 2rem;
 }
@@ -617,19 +601,6 @@ video {
 
 .max-w-\[95\%\] {
   max-width: 95%;
-}
-
-.columns-\[4\/6\] {
-  -moz-columns: 4/6;
-       columns: 4/6;
-}
-
-.grid-cols-7 {
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .gap-2 {
@@ -675,6 +646,14 @@ video {
   padding: 1rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -717,46 +696,6 @@ video {
   color: rgb(96 165 250 / var(--tw-text-opacity, 1));
 }
 
-@media not all and (min-width: 1024px) {
-  .max-lg\:col-\[4\/7\] {
-    grid-column: 4/7;
-  }
-
-  .max-lg\:row-\[2\] {
-    grid-row: 2;
-  }
-
-  .max-lg\:m-0 {
-    margin: 0px;
-  }
-
-  .max-lg\:grid {
-    display: grid;
-  }
-
-  .max-lg\:grid-cols-7 {
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-  }
-
-  .max-lg\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media not all and (min-width: 640px) {
-  .max-sm\:mb-8 {
-    margin-bottom: 2rem;
-  }
-
-  .max-sm\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
-  .max-sm\:w-\[50\%\] {
-    width: 50%;
-  }
-}
-
 @media (min-width: 640px) {
   .sm\:mb-8 {
     margin-bottom: 2rem;
@@ -766,97 +705,155 @@ video {
     margin-top: 2.5rem;
   }
 
-  .sm\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
   .sm\:w-\[50\%\] {
     width: 50%;
+  }
+
+  .sm\:w-\[75\] {
+    width: 75;
+  }
+
+  .sm\:w-\[75\%\] {
+    width: 75%;
   }
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-\[2\/5\] {
+    grid-column: 2/5;
+  }
+
   .lg\:col-\[4\/7\] {
     grid-column: 4/7;
   }
 
-  .lg\:col-\[2\/5\] {
-    grid-column: 2/5;
+  .lg\:col-\[3\/6\] {
+    grid-column: 3/6;
   }
 
   .lg\:row-\[2\] {
     grid-row: 2;
   }
 
-  .lg\:m-0 {
-    margin: 0px;
-  }
-
-  .lg\:mb-6 {
-    margin-bottom: 1.5rem;
-  }
-
-  .lg\:mb-7 {
-    margin-bottom: 1.75rem;
-  }
-
-  .lg\:mb-8 {
-    margin-bottom: 2rem;
-  }
-
   .lg\:mb-12 {
     margin-bottom: 3rem;
   }
 
-  .lg\:inline-block {
-    display: inline-block;
+  .lg\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .lg\:grid {
     display: grid;
   }
 
-  .lg\:h-auto {
-    height: auto;
+  .lg\:w-\[75\%\] {
+    width: 75%;
   }
 
-  @media (min-width: 1024px) {
-    .lg\:lg\:h-auto {
-      height: auto;
-    }
+  .lg\:w-auto {
+    width: auto;
+  }
+
+  .lg\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .lg\:w-\[100\%\] {
+    width: 100%;
   }
 
   .lg\:grid-cols-7 {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
 
-  .lg\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:grid-rows-\[200px\] {
-    grid-template-rows: 200px;
-  }
-
   .lg\:grid-rows-\[200px_200px\] {
     grid-template-rows: 200px 200px;
+  }
+
+  .lg\:grid-rows-\[200px_180px\] {
+    grid-template-rows: 200px 180px;
+  }
+
+  .lg\:grid-rows-\[200px_160px\] {
+    grid-template-rows: 200px 160px;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 }
 
 @media (min-width: 1280px) {
+  .xl\:my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .xl\:my-\[50\%\] {
+    margin-top: 50%;
+    margin-bottom: 50%;
+  }
+
+  .xl\:my-\[80\%\] {
+    margin-top: 80%;
+    margin-bottom: 80%;
+  }
+
+  .xl\:my-\[20\%\] {
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+
   .xl\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .xl\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .xl\:mt-12 {
+    margin-top: 3rem;
+  }
+
+  .xl\:mt-\[20\%\] {
+    margin-top: 20%;
   }
 
   .xl\:flex {
     display: flex;
   }
 
+  .xl\:h-\[50\%\] {
+    height: 50%;
+  }
+
+  .xl\:h-auto {
+    height: auto;
+  }
+
   .xl\:w-\[50\%\] {
     width: 50%;
   }
 
+  .xl\:w-auto {
+    width: auto;
+  }
+
+  .xl\:w-\[100\%\] {
+    width: 100%;
+  }
+
   .xl\:grid-rows-\[150px_150px\] {
     grid-template-rows: 150px 150px;
+  }
+
+  .xl\:items-center {
+    align-items: center;
+  }
+
+  .xl\:justify-center {
+    justify-content: center;
   }
 }
