@@ -842,3 +842,21 @@ video {
     grid-template-rows: 200px 200px;
   }
 }
+
+@media (min-width: 1280px) {
+  .xl\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .xl\:grid-rows-\[150px_150px\] {
+    grid-template-rows: 150px 150px;
+  }
+}
